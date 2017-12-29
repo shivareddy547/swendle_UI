@@ -14,7 +14,7 @@
     "build:all": "npm run build:free && npm run build:pro",
     "aot:build": "ng build --prod --sm=false --aot=true --output-path=dist",
     "pre-commit": "ng lint",
-    "postinstall": "ng build --aot -prod",
+
     "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
