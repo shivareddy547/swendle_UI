@@ -13,7 +13,9 @@
     "build:pro": "ngm build -p src/app/typescripts/pro --clean && gulp only-pro && gulp startPro",
     "build:all": "npm run build:free && npm run build:pro",
     "aot:build": "ng build --prod --sm=false --aot=true --output-path=dist",
-    "pre-commit": "ng lint"
+    "pre-commit": "ng lint",
+    "postinstall": "ng build --aot -prod",
+    "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +35,7 @@
     "classlist.js": "1.1.x",
     "core-js": "2.4.x",
     "del": "3.0.x",
+    "express": "^4.16.2",
     "font-awesome": "4.7.x",
     "gulp": "^3.9.1",
     "gulp-rename": "1.2.x",
