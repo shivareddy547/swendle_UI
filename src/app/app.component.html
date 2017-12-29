@@ -1,0 +1,182 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-4 col-2" style="max-width: 11.666667% !important;">
+                <img src="../assets/images/Swendle.PNG"/>
+        </div>
+        <div class="col-md-7 col-sm-12 col-12">
+            <form class="form-inline md-form form-sm">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input class="form-control w-75 ml-3" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        <div class="col-md-3 col-sm-8 col-8">
+                <a href="">
+                    <img src="../assets/images/notificaton.png" class="img-responsive center-block" style="margin-top: 1.6rem;"/>
+            <span class="badge badge-notify">3</span></a>
+
+
+            <ng-template #elseTemplate>
+            <div class="btn-group" dropdown style=" margin-top: 10px;">
+                <a dropdownToggle class="dropdown-toggle">
+                    <img src="#" class="rounded-circle profile-image" alt=""> Registration/Login
+                </a>
+                <div class="dropdown-menu dropdown-primary">
+                    <a class="dropdown-item" href="/login">Login</a>
+                    <a class="dropdown-item" href="/signup">Signup</a>
+
+                </div>
+            </div>
+
+            </ng-template>
+            <ng-container *ngIf="is_active(); else elseTemplate">
+            <div class="btn-group" dropdown style=" margin-top: 10px;">
+                <a dropdownToggle class="dropdown-toggle">
+                    <img src="../assets/images/profile.jpg" class="rounded-circle profile-image" alt=""> BALAKRISHNA
+                </a>
+                <div class="dropdown-menu dropdown-primary">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark nav-color main-navigation">
+
+    <links>
+        <ul class="navbar-nav">
+
+            <!--<a [routeLink]="['/home']">Not registered</a>-->
+            <!--<a [routerLinkActive]="['active']" [routerLink]="['/home']" title="">rent</a>-->
+            <!--<a href="javascript:void(0)" [routerLink]="cartoonBoxUrl()" routerLinkActive="active">Add Content to Cartoon Box</a>-->
+            <!--<a [routerLink]="['/home']" [routerLinkActive]="'is-active'">Home</a>-->
+
+
+            <li [routerLink]="['/home']" [routerLinkActive]="'nav-item active'">
+            <a class="nav-link" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li [routerLink]="['/global']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link" >Global <span class="sr-only">(current)</span></a>
+            </li>
+            <li [routerLink]="['/sports']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link ">Sports</a>
+            </li>
+            <li [routerLink]="['/politics']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link" href="/politics" >Politics</a>
+            </li>
+            <li [routerLink]="['/privacy']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link" href="/privacy" >Privacy</a>
+            </li>
+            <li [routerLink]="['/travel']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link">Travel</a>
+            </li>
+             <li [routerLink]="['/weather']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link ">Weather</a>
+            </li>
+            <li [routerLink]="['/technology']" [routerLinkActive]="'nav-item active'">
+                <a class="nav-link">Technology</a>
+            </li>
+            <!--<li [routerLink]="['/health']" [routerLinkActive]="'nav-item active'">-->
+                <!--<a class="nav-link">Health</a>-->
+            <!--</li>-->
+            <!--<li [routerLink]="['/entertainment']" [routerLinkActive]="'nav-item active'">-->
+                <!--<a class="nav-link">Entertainment</a>-->
+            <!--</li>-->
+        </ul>
+    </links>
+</mdb-navbar>
+<router-outlet></router-outlet>
+
+<footer class="page-footer mdb-color center-on-small-only" style="padding-top: 52px">
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-4 offset-md-1" style="text-align: center; margin-top: 60px;">
+                <strong  style="font-size: 22px;">Explore The Swendle</strong>
+                <img src="./assets/images/footer.PNG"
+                     class="rounded mx-auto d-block">
+            </div>
+            <!--/.First column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Second column-->
+            <div class="col-md-2 offset-md-1">
+                <h5 class="title">Regions</h5>
+                <ul>
+                    <li><a href="#!">UK</a></li>
+                    <li><a href="#!">Africa</a></li>
+                    <li><a href="#!">America</a></li>
+                    <li><a href="#!">Asia</a></li>
+                    <li><a href="#!">China</a></li>
+                    <li><a href="#!">Europe</a></li>
+                    <li><a href="#!">Middle East</a></li>
+                    <li><a href="#!">Opinion</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Third column-->
+            <div class="col-md-2">
+                <h5 class="title">Vidoe</h5>
+                <ul>
+                    <li><a href="#!">Video News</a></li>
+                    <li><a href="#!">Feature Shows</a></li>
+                    <li><a href="#!">Tv Shows</a></li>
+                    <li><a href="#!">TV Schedule</a></li>
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Fourth column-->
+            <div class="col-md-2">
+                <h5 class="title">Tech</h5>
+                <ul>
+                    <li><a href="#!">Business</a></li>
+                    <li><a href="#!">Culture</a></li>
+                    <li><a href="#!">Gadgets</a></li>
+                    <li><a href="#!">Future</a></li>
+                    <li><a href="#!">Startups</a></li>
+                </ul>
+            </div>
+            <hr class="hidden-md-up">
+
+            <!--Fourth column-->
+            <div class="col-md-2">
+                <h5 class="title">Travel</h5>
+                <ul>
+                    <li><a href="#!">Wonder</a></li>
+                    <li><a href="#!">Food & Drink</a></li>
+                    <li><a href="#!">Play</a></li>
+                    <li><a href="#!">Stay</a></li>
+                    <li><a href="#!">Videos</a></li>
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="!">  Swendle</a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+    <!--/.Copyright-->
+
+</footer>

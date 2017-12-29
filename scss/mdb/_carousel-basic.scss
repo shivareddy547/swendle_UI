@@ -1,0 +1,18 @@
+// CAROUSELS BASIC
+.carousel {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 36px;
+        height: 36px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url(#{$image-path}/svg/arrow_left.svg);
+    }
+    .carousel-control-next-icon {
+        background-image: url(#{$image-path}/svg/arrow_right.svg);
+    }
+    .video-fluid {
+        height: 100%;
+        width: 100%;
+    }
+}

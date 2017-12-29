@@ -1,0 +1,151 @@
+.nav-color{
+  background-color: #1397A1 !important;
+}
+body{
+  margin-top: 13px;
+}
+.w-75 {
+  width: 85% !important;
+}
+.badge-notify{
+  background:red;
+  position:relative;
+  left: -20px;
+  top: -3px;
+}
+a{
+  cursor: pointer;
+}
+.profile-image {
+  margin-top: 0px;
+  width: 37px;
+  height: 37px;
+}
+
+.navbar-login
+{
+  width: 305px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.icon-size
+{
+  font-size: 87px;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+footer.page-footer .title {
+  text-transform: none;
+}
+h5, .h5 {
+  font-size: 1.15rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #005950 !important;
+}
+.mdb-color {
+  background-color:#3E3733 !important;
+}
+html,body{
+  height: 100%
+}
+
+
+.mdl-card + .mdl-card {
+  margin-top: 40px;
+}
+
+// Card styles
+
+.mdl-card--horizontal {
+  flex-direction: column;
+  padding-left: 150px;
+  width: 100%;
+  
+  .mdl-card__media {
+    left: 0;
+    position: absolute;
+    width: 150px;
+  }
+  
+  .mdl-card__supporting-text {
+    flex: 1 1 auto;
+    width: auto;
+  }
+}
+
+.rec-icon{
+   -webkit-filter: invert(100%); filter: invert(100%);
+}
+.comment-img{
+      margin-left: 9px;  
+}
+
+
+
+
+.main-navigation ul li a{
+padding-right: 41px !important;
+padding-left: 41px !important;
+}
+.navbar {
+    padding: 0px;
+}
+
+.nav-link {
+    display: block;
+    padding: 14px;
+}
+/*
+.nav-item.active > .nav-link {
+    background-color: #005950;
+}
+*/
+
+.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link, .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
+    background-color: #005950 ! important;
+}
+
+
+
+/*
+.ng-valid[required], .ng-valid.required  {
+ 
+    
+}*/
+.form-control-feedback{
+    
+}
+.has-success{
+     color: #42A948; 
+}
+.has-danger{
+   color:#a94442;   
+}
+/*.ng-invalid:not(form)  {
+  color:#a94442;  red 
+}*/
